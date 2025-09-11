@@ -18,7 +18,7 @@ class About extends React.Component {
             Outside of the world wide web, I like movies (horror!), music (indie!), and traveling (everywhere!). As you read this, I am probably scribbling away in a journal,
                 reading a book, or playing piano. Ask me about my favorite sitcom, and tell me yours!<br /><br />
             In short, I love a good story, and a great adventure. Ready to leave the Shire?</p>
-            </div><div style="clear: both;"></div>
+            </div><div></div>
            
         </section>
               

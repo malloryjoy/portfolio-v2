@@ -1,7 +1,21 @@
-@tailwind base;
-@tailwind components;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Vidaloka&display=swap');
 @tailwind utilities;
 
+/* Optional: CSS variable for Inter if you want to keep it */
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-mogra: "Mogra", sans-serif;
+}
+
+/* Tailwind component layer for nav items */
+@layer components {
+  .navItem {
+    @apply font-inter;
+  }
+}
+
+
+/* Global root styles */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -17,15 +31,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Global link styles */
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
+/* Body and layout */
 body {
   margin: 0;
   display: flex;
@@ -35,10 +52,12 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 4em;
   line-height: 1.1;
+
 }
 
+/* Buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -50,22 +69,45 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.navItem{
+  color: #000;
+  text-decoration:none;
+  font-weight:bold;
+  text-transform: uppercase;
+  display: inline-flex;
+  font-size: 1em;
+  position:relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type:none;
+  padding: 1em;
+}
+
+
+
+
+/* Light mode overrides */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

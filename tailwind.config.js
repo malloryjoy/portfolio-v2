@@ -4,9 +4,21 @@ export default {
       "./index.html",
       "./src/**/*.{js,ts,jsx,tsx}",
     ],
+      important: true, // all Tailwind utilities get !important
+    
     theme: {
-      extend: {},
+      extend: {
+
+        fontFamily: {
+          inter: ['Inter', 'sans-serif'],
+          mogra: ['Mogra', 'sans-serif'],
+        },
+
+
+      },
     },
     plugins: [],
   }
+  
+
   
