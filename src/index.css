@@ -7,17 +7,40 @@
   --font-mogra: "Mogra", sans-serif;
   --font-vidaloka: "Vidaloka", sans-serif;
   --color-magic-purple: #9747FF;
+  --color-section-purple: #320D6D;
+  --color-fuschia: #BE0E92;
+  --color-white: #fff;
+  --text-shadow-sm: 1px 1px 1px rgba(0, 0, 0, 29%);
   --text-shadow-xl: 1px 1px 1px var(--color-magic-purple);
+  --text-shadow-dark: 1px 1px 1px #000;
+  --text-lg: 2em;
+  --text-sm: 14px;
+  --text-med: 24px;
   --text-lg: 2em;
   --text-xl: 4em;
+  --text-white: #fff;
+  --text-black: #000;
   --pt-4: 10%;
   --mt-5: 4em;
+ 
+  
+  
 }
 
-/* Tailwind component layer for nav items */
 @layer components {
   .navItem {
     @apply font-inter;
+  }
+  h2 {
+    @apply font-vidaloka;
+  }
+  th{
+    @apply font-vidaloka bg-fuschia text-shadow-sm text-med; 
+  }
+  .button{
+    @apply text-sm font-vidaloka bg-fuschia border-2 border-fuschia text-white;
+   
+
   }
   
 }
@@ -37,10 +60,65 @@
   padding-top: 1em;
 }
 
+#expertise {
+  
+  padding: 3% 10%;
+  padding-bottom: 2em;
+  height: 20em;
+}
+
+#expertise h2, #resume h2{
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 2%;
+}
+
+#expertise li {
+  color: white;
+  list-style-type: disc;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#skills{
+  padding: 0 15%;
+}
+
 #defaultimage{
   margin-bottom:.25em;
   margin-right: 2em;
 } 
+
+#projects{
+  padding: 4em 0 9em 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+}
+
+#projects h2{
+  font-size: 50px;
+}
+
+#projects td a{
+  color: #000 !important;
+}
+
+#row2{
+  margin: 0 auto;
+}
+
+#resume{
+  padding: 3em 0;
+}
+
+.button{
+
+    padding: 16px 28px;
+
+}
+
 
 
 /* Global root styles */
@@ -59,6 +137,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+table{
+  border: 1px solid rgba(0, 0, 0, 29%);
+  width: 300px;
+  height: 240px;
+  flex-shrink: 0;
+  margin: 0 1em;
+}
+
 /* Global link styles */
 a {
   font-weight: 500;
@@ -68,12 +154,29 @@ a {
 
 a:hover {
   color: #535bf2;
+  text-decoration: underline;
 }
 
 .fa-solid{
   color: black;
 }
 
+#resume a{
+  color: #fff !important;
+  font-size: 22px;
+}
+
+#resume h2{
+  margin-bottom: 4%;
+}
+
+#bagms{
+  height: 2rem;
+}
+
+#resume .button {
+  line-height: 1.5
+}
 /* Body and layout */
 body {
   margin: 0;
@@ -130,6 +233,8 @@ button:focus-visible {
   font-weight: 900;
   
 }
+
+/* Tailwind component layer for nav items */
 
 
 /* Light mode overrides */

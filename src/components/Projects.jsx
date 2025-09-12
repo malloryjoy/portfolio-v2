@@ -4,13 +4,13 @@ class Projects extends React.Component {
     render() {
         
         return (<><section id="projects" role="region" aria-label="Sample Work">
-            <h2>Sample Work</h2>
+            <h2 className="color-black text-shadow-dark">Sample Work</h2>
             
             <div id="row2">
-                <table class="col1">
+                <table class="float-left">
                     <tbody>
-                        <tr><th>Wordpress Websites</th></tr>
-                        <tr><td><a href="https://www.providence-golf.com/" target="_blank" aria-label="Providence Golf Club (opens in a new tab)">Providence Golf Club</a></td></tr>
+                        <tr><th className="text-white">Wordpress Websites</th></tr>
+                        <tr><td ><a href="https://www.providence-golf.com/" target="_blank" aria-label="Providence Golf Club (opens in a new tab)">Providence Golf Club</a></td></tr>
                         <tr><td><a href="https://www.seaviewgolf.com/" target="_blank" aria-label="Seaview Golf Club (opens in a new tab)">Seaview Golf Club</a></td></tr>
                         <tr><td><a href="https://www.citrusnational.com/" target="_blank" aria-label="Citrus National Golf Club (opens in a new tab)">Citrus National Golf Club</a></td></tr>
                         <tr><td><a href="https://sunshineclosetdesigns.com/" target="_blank" aria-label="Sunshine Closet Designs (opens in a new tab)">Sunshine Closet Designs</a></td></tr>
@@ -20,9 +20,9 @@ class Projects extends React.Component {
                 </table>
             
             
-                <table class="col2">
+                <table class="float-right">
                     <tbody>
-                        <tr><th>Technical Documentation</th></tr>
+                        <tr><th className="text-white">Technical Documentation</th></tr>
                         <tr><td><a href="/OnlineStoreSetup.pdf" target="_blank" aria-label="Getting started with WooCommerce (opens in a new tab)">Online Store Setup</a></td></tr>
                         <tr><td><a href="/BasicBuildProcess.pdf" target="_blank" aria-label="Website Build Basics (opens in a new tab)">Website Build Basics</a></td></tr>
                         <tr><td><a href="/SunstoneWalkthrough.pdf" target="_blank" aria-label="Sunstone Build Process (opens in a new tab)">Sunstone Build Process</a></td></tr>
