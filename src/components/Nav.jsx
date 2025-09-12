@@ -7,8 +7,8 @@ class Nav extends React.Component {
         return (<><section id="mobileNav">
             <ul>
                     <li className="navItem"><a className="navItem" href="#welcome">Home</a> </li>
-                    <li className="navItem text-2xl font-bold mb-2"><a className="navItem" href="#aboutme">About</a> </li>
-                    <li className="navItem text-2xl font-bold mb-2"><a className="navItem" href="#expertise">Projects</a> </li>
+                    <li className="navItem"><a className="navItem" href="#aboutme">About</a> </li>
+                    <li className="navItem"><a className="navItem" href="#expertise">Projects</a> </li>
                     <li className="navItem"><a className="navItem" href="#resume">Resume</a> </li>
                     <li className="navItem"><a className="navItem" href="#contact">Contact</a> </li>
                     <li className="navItem"><a className="navItem" href="/ux-portfolio.html">UX Portfolio</a> </li>

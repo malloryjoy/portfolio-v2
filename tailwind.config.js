@@ -12,6 +12,7 @@ export default {
         fontFamily: {
           inter: ['Inter', 'sans-serif'],
           mogra: ['Mogra', 'sans-serif'],
+          vidaloka: ['Vidaloka', 'sans-serif'],
         },
 
 

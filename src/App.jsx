@@ -2,7 +2,6 @@ import { useState } from 'react'
 import React from 'react';
 import './App.css';
 import './index.css'
-import Nav from './components/Nav';
 import Welcome from './components/Welcome';
 import About from './components/About';
 import Expertise from './components/Expertise';
@@ -16,7 +15,6 @@ function App() {
 
   return (
     <>
-      <Nav />
       <Welcome />
       <About />
       <Expertise />

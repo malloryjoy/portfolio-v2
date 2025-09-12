@@ -5,6 +5,13 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-mogra: "Mogra", sans-serif;
+  --font-vidaloka: "Vidaloka", sans-serif;
+  --color-magic-purple: #9747FF;
+  --text-shadow-xl: 1px 1px 1px var(--color-magic-purple);
+  --text-lg: 2em;
+  --text-xl: 4em;
+  --pt-4: 10%;
+  --mt-5: 4em;
 }
 
 /* Tailwind component layer for nav items */
@@ -12,7 +19,28 @@
   .navItem {
     @apply font-inter;
   }
+  
 }
+
+#welcome {
+  background-image: linear-gradient(to right, #FFE66D 50%, #fbcaef 50%);
+   padding-bottom:3em;
+   min-height:600px;
+   height: 58vh;
+}
+
+#aboutme {
+  padding: 10% 10% 10% 25%;
+}
+
+#aboutme h2{
+  padding-top: 1em;
+}
+
+#defaultimage{
+  margin-bottom:.25em;
+  margin-right: 2em;
+} 
 
 
 /* Global root styles */
@@ -40,6 +68,10 @@ a {
 
 a:hover {
   color: #535bf2;
+}
+
+.fa-solid{
+  color: black;
 }
 
 /* Body and layout */
@@ -94,13 +126,16 @@ button:focus-visible {
   padding: 1em;
 }
 
-
+.fa-solid, .fas {
+  font-weight: 900;
+  
+}
 
 
 /* Light mode overrides */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #000;
     background-color: #ffffff;
   }
 
