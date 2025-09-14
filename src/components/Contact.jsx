@@ -6,7 +6,7 @@ class Contact extends React.Component {
         return (<><section id="contact" role="region" aria-label="Get in Touch">
             <h2>Get in Touch</h2>
             <div id="bagms"></div>
-            <p><a aria-label="Email Me" class="button" href="mailto:malloryjoy13@gmail.com">Email Me</a></p>
+            <p><a className="text-white" aria-label="Download Here" class="button hover:bg-baby-pink hover:text-black" href="mailto:malloryjoy13@gmail.com">Email Me</a></p>
  
  
         </section>

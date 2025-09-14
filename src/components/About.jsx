@@ -1,11 +1,14 @@
 import React from 'react';
+import '/src/index.css';
 
 class About extends React.Component {
     render() {
         
         return (<><section id="aboutme" role="main" >
           
-            
+          <div className="bg-red-400">
+  If this box is red, Tailwind is working!
+</div>
             <div role="region" id="mystory" aria-label="about me">
             <img class="rounded-full w-7/24 h-7/24 float-start" id="defaultimage" src="/src/assets/myface.jpg" alt="Mallory Joy face" />
             <h2 class="font-vidaloka text-left text-lg mt-5" aria-label="Hi! I'm Mallory.">Hi! I'm Mallory.</h2>
