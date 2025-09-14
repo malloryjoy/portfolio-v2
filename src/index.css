@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Vidaloka&display=swap');
-@tailwind utilities;
-@layer theme, base, components, utilities;
+@import "tailwindcss";
+/* @tailwind utilities;
+@layer theme, base, components, utilities; */
 /* Optional: CSS variable for Inter if you want to keep it */
 @theme {
   --font-inter: "Inter", sans-serif;
@@ -17,7 +18,7 @@
   --text-lg: 2em;
   --text-xs: 0.75em;
   --text-sm: 14px;
-  --text-med: 24px;
+  /* --text-med: 24px; */
   --text-lg: 2em;
   --text-xl: 4em;
   --text-white: #fff;
@@ -37,7 +38,7 @@
     @apply font-vidaloka;
   }
   th{
-    @apply font-vidaloka bg-fuschia text-shadow-sm text-med; 
+    @apply font-vidaloka bg-fuschia text-shadow-sm; /*text-med; */
   }
   .button{
     @apply text-sm font-vidaloka bg-fuschia border-2 border-fuschia text-white hover:!text-black hover:border-baby-pink;
