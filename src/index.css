@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mogra&family=Vidaloka&display=swap');
-@tailwind utilities;
-@layer theme, base, components, utilities;
+/* @tailwind utilities;
+@layer theme, base, components, utilities; */
 /* Optional: CSS variable for Inter if you want to keep it */
+@import "tailwindcss";
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-mogra: "Mogra", sans-serif;
