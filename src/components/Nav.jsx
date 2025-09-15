@@ -4,7 +4,7 @@ import '/src/index.css';
 class Nav extends React.Component {
     render() {
         
-        return (<><section id="mobileNav">
+        return (<><section id="mobileNav" className="pt-6">
             <ul>
                     <li className="navItem"><a className="navItem" href="#welcome">Home</a> </li>
                     <li className="navItem"><a className="navItem" href="#aboutme">About</a> </li>

@@ -15,16 +15,17 @@
   --text-shadow-sm: 1px 1px 1px rgba(0, 0, 0, 29%);
   --text-shadow-xl: 1px 1px 1px var(--color-magic-purple);
   --text-shadow-dark: 1px 1px 1px #000;
-  --text-lg: 2em;
+
+  /* --text-lg: 2em;
   --text-xs: 0.75em;
   --text-sm: 14px;
   --text-med: 24px;
   --text-lg: 2em;
   --text-xl: 4em;
   --text-white: #fff;
-  --color-black: #000;
-  --pt-4: 10%;
-  --mt-5: 4em;
+  --color-black: #000; */
+  /*--pt-4: 10%;
+  --mt-5: 4em;*/
  
   
   
@@ -32,13 +33,13 @@
 
 @layer components {
   .navItem {
-    @apply font-inter;
+    @apply font-inter text-xl !font-extrabold !text-black uppercase inline-flex flex-row justify-items-center py-4 px-3 align-middle;
   }
   h2 {
     @apply font-vidaloka;
   }
   th{
-    @apply font-vidaloka bg-fuschia text-shadow-sm text-med; 
+    @apply font-vidaloka bg-fuschia text-shadow-sm /*text-med*/; 
   }
   .button{
     @apply text-sm font-vidaloka bg-fuschia border-2 border-fuschia text-white hover:!text-black hover:border-baby-pink;
@@ -56,6 +57,10 @@
    padding-bottom:3em;
    min-height:600px;
    height: 58vh;
+}
+
+#hd-lspcmn {
+  height: 6rem;
 }
 
 #aboutme {
@@ -161,8 +166,37 @@ table{
   margin: 0 1em;
 }
 
+
+/* Make the nav links relative so the pseudo-element can be positioned */
+#mobileNav a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 4px; 
+}
+
+/* Create the underline using ::after */
+#mobileNav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;          
+  bottom: 0;           
+  width: 0;            
+  height: 2px;         
+  background-color: black;
+  transition: width 0.5s ease, left 0.5s ease; 
+}
+
+/* On hover, expand the underline outwards */
+#mobileNav a:hover::after {
+  width: 100%;         
+  left: 0;             
+}
+
+
 /* Global link styles */
-a {
+/*a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -171,7 +205,7 @@ a {
 a:hover {
   color: #535bf2;
   text-decoration: underline;
-}
+}*/
 
 .fa-solid{
   color: black;
@@ -230,20 +264,20 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.navItem{
+/* .navItem{
   color: #000;
   text-decoration:none;
-  font-weight:bold;
+  
   text-transform: uppercase;
   display: inline-flex;
-  font-size: 1em;
+  
   position:relative;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   list-style-type:none;
   padding: 1em;
-}
+} */
 
 .fa-solid, .fas {
   font-weight: 900;

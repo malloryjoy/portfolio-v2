@@ -4,7 +4,7 @@ class Welcome extends React.Component {
 
     render() {
         
-        return (<><section id="welcome" role="region" aria-label="my portfolio">
+        return (<><section id="welcome" role="region" aria-label="my portfolio" >
             <Nav />
             <div id="hd-lspcmn"></div>
            <div aria-labelledby="Mallory Joy">
