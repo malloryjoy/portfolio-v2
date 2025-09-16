@@ -33,7 +33,7 @@
 
 @layer components {
   .navItem {
-    @apply font-inter text-xl !font-extrabold !text-black uppercase inline-flex flex-row justify-items-center py-4 px-3 align-middle;
+    @apply font-inter text-xl !font-extrabold !text-black uppercase inline-flex flex-row justify-items-center py-4 px-3 align-middle relative pb-1;
   }
   h2 {
     @apply font-vidaloka;
@@ -167,31 +167,21 @@ table{
 }
 
 
-/* Make the nav links relative so the pseudo-element can be positioned */
-#mobileNav a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding-bottom: 4px; 
-}
-
-/* Create the underline using ::after */
-#mobileNav a::after {
+.navItem::after {
   content: "";
   position: absolute;
-  left: 50%;          
-  bottom: 0;           
-  width: 0;            
-  height: 2px;         
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
   background-color: black;
-  transition: width 0.5s ease, left 0.5s ease; 
+  transition: width 0.5s ease, left 0.5s ease;
 }
 
 /* On hover, expand the underline outwards */
-#mobileNav a:hover::after {
-  width: 100%;         
-  left: 0;             
+.navItem:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 

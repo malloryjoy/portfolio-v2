@@ -6,7 +6,7 @@ class Welcome extends React.Component {
         
         return (<><section id="welcome" role="region" aria-label="my portfolio" className="!h-160" >
             <Nav />
-            <div id="hd-lspcmn"></div>
+            <div id="hd-lspcmn" className="pt-46"></div>
            <div aria-labelledby="Mallory Joy">
            <h1 className="font-mogra text-shadow-xl text-xl">MALLORY JOY</h1>
            <p className="leading-1.5 text-base py-8">EST. 1994</p>
