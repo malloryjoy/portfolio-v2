@@ -6,7 +6,7 @@ class Expertise extends React.Component {
         
         return (<><section id="expertise" class="bg-section-purple text-white flex flex-col items-center justify-center" role="region" aria-label="Areas of Expertise">
             <h2 className="color-white">Areas of Expertise</h2>
-            <div id="skills" class="grid grid-cols-1 sm:ml-20 md:grid-cols-2 gap-2 px-8 w-full max-w-xl">
+            <div id="skills" class="grid grid-cols-1 items-center sm:ml-20 md:grid-cols-2 gap-2 px-8 w-full max-w-xl">
                 <div class="text-left">
                     <ul>
                         <li>Web Design</li>
