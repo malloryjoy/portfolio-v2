@@ -3,7 +3,7 @@ import React from 'react';
 class Footer extends React.Component {
     render() {
         
-        return (<><section id="footer" class="text-xs" >
+        return (<><section id="footer" class="text-xs mt-14 bg-baby-pink text-black text-center pt-16 pb-8" >
             <p>Copyright 2024 Mallory Joy. All Rights Reserved.</p>
           
           <p>ICONS: <a href="https://iconscout.com/icons/linkedin" class="text-underline font-size-sm" target="_blank">Linkedin</a> by <a href="https://iconscout.com/contributors/stonehub" class="text-underline font-size-sm">Stone Hub</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> |

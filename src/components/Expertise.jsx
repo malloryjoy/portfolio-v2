@@ -4,10 +4,10 @@ import React from 'react';
 class Expertise extends React.Component {
     render() {
         
-        return (<><section id="expertise" class="bg-section-purple text-white" role="region" aria-label="Areas of Expertise">
+        return (<><section id="expertise" class="bg-section-purple text-white flex flex-col items-center justify-center" role="region" aria-label="Areas of Expertise">
             <h2 className="color-white">Areas of Expertise</h2>
-            <div id="skills">
-                <div class="text-left float-left">
+            <div id="skills" class="grid grid-cols-1 sm:ml-20 md:grid-cols-2 gap-2 px-8 w-full max-w-xl">
+                <div class="text-left">
                     <ul>
                         <li>Web Design</li>
                         <li>Technical Documentation</li>
@@ -15,7 +15,7 @@ class Expertise extends React.Component {
                         
                     </ul>
                 </div>
-                <div class="text-left float-right">
+                <div class="text-left">
                     <ul>
                         <li>Wordpress Development</li>
                         <li>UX Design</li>

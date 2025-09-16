@@ -14,7 +14,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="pt-6 fixed w-full top-0 left-0 z-50">
+    <nav className="relative pt-6 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 flex justify-center items-center">
         
         {/* Desktop Nav */}

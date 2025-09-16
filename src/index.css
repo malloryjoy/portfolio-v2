@@ -92,9 +92,9 @@
   font-weight: 500;
 }
 
-#skills{
-  padding: 0 15%;
-}
+ /* #skills{
+  padding: 0 5%;
+}  */
 
 #defaultimage{
   margin-bottom:.25em;
@@ -130,15 +130,15 @@
 
 }
 
-#footer {
+/* #footer {
   margin-top: 3em;
   background-color: #FBCAEF;
   color: #000;
-  height: 10vh;
+  
   text-align: center;
   padding-top: 4em;
   padding-bottom: 2em;
-}
+} */
 
 
 

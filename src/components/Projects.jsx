@@ -3,11 +3,11 @@ import React from 'react';
 class Projects extends React.Component {
     render() {
         
-        return (<><section id="projects" role="region" aria-label="Sample Work">
+        return (<><section id="projects" role="region" aria-label="Sample Work" className="flex flex-col items-center justify-center">
             <h2 className="color-black text-shadow-dark">Sample Work</h2>
             
-            <div id="row2">
-                <table class="float-left">
+            <div id="row2" className="grid grid-cols-1 sm:ml-20 md:grid-cols-2 gap-2 w-full max-w-xl">
+                <table>
                     <tbody>
                         <tr><th className="text-white">Wordpress Websites</th></tr>
                         <tr><td ><a href="https://www.providence-golf.com/" target="_blank" aria-label="Providence Golf Club (opens in a new tab)">Providence Golf Club</a></td></tr>
@@ -20,7 +20,7 @@ class Projects extends React.Component {
                 </table>
             
             
-                <table class="float-right">
+                <table>
                     <tbody>
                         <tr><th className="text-white">Technical Documentation</th></tr>
                         <tr><td><a href="/OnlineStoreSetup.pdf" target="_blank" aria-label="Getting started with WooCommerce (opens in a new tab)">Online Store Setup</a></td></tr>
